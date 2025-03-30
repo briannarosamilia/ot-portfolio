@@ -58,7 +58,7 @@ const items = [
       <v-img
           class="me-sm-8"
           max-width="40"
-          src="src/assets/ot_logo.png"
+          src="/ot_logo.png"
       />
 
       <template v-if="$vuetify.display.mdAndUp">

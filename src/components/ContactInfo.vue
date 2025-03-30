@@ -1,22 +1,29 @@
 <script setup>
 import {useDisplay} from "vuetify";
+import {computed} from "vue";
 
 const { width } = useDisplay();
+
+const responsive = computed(() => {
+  return width.value < 500 ?
+      { height: 'height: 740px', cols: 10, offset: 1 } :
+      { height: 'height: 700px', cols: 8, offset: 2 };
+});
 </script>
 
 <template>
-  <div style="height: 700px">
+  <div :style="responsive.height">
     <v-parallax
         src="https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE"
         class="d-flex align-center"
     >
       <v-row no-gutters>
-        <v-col cols="8" offset="2">
+        <v-col :cols="responsive.cols" :offset="responsive.offset">
           <v-card class="rounded-lg my-4">
             <v-row no-gutters>
               <v-col >
                 <div class="d-flex justify-center">
-                  <img src="/src/assets/headshot.jpg" alt="Headshot" class="rounded-lg ma-2" style="max-width: 240px"/>
+                  <img src="/headshot.jpg" alt="Headshot" class="rounded-lg ma-2" style="max-width: 240px"/>
                 </div>
               </v-col>
               <v-col>
