@@ -51,6 +51,7 @@ const items = [
       <template #prepend>
         <v-app-bar-nav-icon
             v-if="$vuetify.display.smAndDown"
+            class="mr-2"
             @click="drawer = !drawer"
         />
       </template>
@@ -61,6 +62,10 @@ const items = [
           class="me-sm-8"
           style="max-width: 40px"
        />
+
+      <template v-if="$vuetify.display.smAndDown">
+        <h2 class="text-h6 font-weight-bold ml-2">Brianna Rosamilia, OTS</h2>
+      </template>
 
       <template v-if="$vuetify.display.mdAndUp">
         <v-btn
@@ -173,9 +178,9 @@ const items = [
     </v-navigation-drawer>
 
     <v-main>
-      <v-toolbar color="surface" elevation="1" height="84">
+      <v-toolbar v-if="!$vuetify.display.smAndDown" color="surface" density="compact" elevation="1" height="76">
         <template #title>
-          <h2 class="text-h4 font-weight-bold">Brianna Rosamilia, OTS</h2>
+          <h2 class="text-h6 text-md-h5 font-weight-bold">Brianna Rosamilia, OTS</h2>
         </template>
       </v-toolbar>
 

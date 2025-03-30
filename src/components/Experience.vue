@@ -100,7 +100,8 @@
               meal prep, and homework and provide techniques to promote independence.
             </li>
             <li class="mb-2">
-              I help the client with mobility while out in the community while utilizing varying devices such as a wheelchair and rollator.
+              I help the client with mobility while out in the community while utilizing varying devices such as a
+              wheelchair and rollator.
             </li>
             <li class="mb-2">
               I provide manual massage to the lower extremities to reduce pain and tightness.

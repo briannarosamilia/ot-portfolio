@@ -2,12 +2,17 @@
 import {useDisplay} from "vuetify";
 import {computed} from "vue";
 
-const { width } = useDisplay();
+const {width} = useDisplay();
 
 const responsive = computed(() => {
-  return width.value < 500 ?
-      { height: 'height: 740px', cols: 10, offset: 1 } :
-      { height: 'height: 700px', cols: 8, offset: 2 };
+  if (width.value < 672) {
+    return {height: 'height: 700px', cols: 10, offset: 1}
+  } else if (width.value < 832) {
+    return {height: 'height: 660px', cols: 8, offset: 2};
+  } else {
+    return {height: 'height: 460px', cols: 8, offset: 2};
+  }
+
 });
 </script>
 
@@ -21,7 +26,7 @@ const responsive = computed(() => {
         <v-col :cols="responsive.cols" :offset="responsive.offset">
           <v-card class="rounded-lg my-4">
             <v-row no-gutters>
-              <v-col >
+              <v-col>
                 <div class="d-flex justify-center">
                   <img src="/headshot.jpg" alt="Headshot" class="rounded-lg ma-2" style="max-width: 240px"/>
                 </div>
@@ -41,7 +46,7 @@ const responsive = computed(() => {
                     <v-col cols="12" class="text-h6 mt-2">
                       <b>Phone:</b>
                     </v-col>
-                    <v-col cols="12">
+                    <v-col cols="12" class="text-body-2 text-md-body-1">
                       516-491-4141
                     </v-col>
 
@@ -49,7 +54,7 @@ const responsive = computed(() => {
                     <v-col cols="12" class="text-h6 mt-2">
                       <b>Email:</b>
                     </v-col>
-                    <v-col cols="12">
+                    <v-col cols="12" class="text-body-2 text-md-body-1">
                       briannarose579@gmail.com
                     </v-col>
 
@@ -57,7 +62,7 @@ const responsive = computed(() => {
                     <v-col cols="12" class="text-h6 mt-2">
                       <b>Address:</b>
                     </v-col>
-                    <v-col cols="12">
+                    <v-col cols="12" class="text-body-2 text-md-body-1">
                       Fort Solanga, New York
                     </v-col>
 
@@ -72,7 +77,10 @@ const responsive = computed(() => {
   </div>
   <div class="text-center text-h4 py-6">Hello! I'm Brianna</div>
   <div class="text-h6 px-12 pb-10">
-    I am a recent graduate from the Occupational Therapy Program at Stony Brook University. My passion for OT began when I accompanied my cousin to her OT appointment at a sensory clinic. I am intrigued by the client-centered holistic approach that OT has to offer. I am a dedicated individual and passionate about providing OT services that lead to positive outcomes and improve overall well-being.
+    I am a recent graduate from the Occupational Therapy Program at Stony Brook University. My passion for OT began when
+    I accompanied my cousin to her OT appointment at a sensory clinic. I am intrigued by the client-centered holistic
+    approach that OT has to offer. I am a dedicated individual and passionate about providing OT services that lead to
+    positive outcomes and improve overall well-being.
   </div>
 </template>
 
