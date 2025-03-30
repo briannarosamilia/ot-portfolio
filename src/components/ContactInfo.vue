@@ -71,7 +71,7 @@ const responsive = computed(() => {
     </v-parallax>
   </div>
   <div class="text-center text-h4 py-6">Hello! I'm Brianna</div>
-  <div class="px-12 pb-6">
+  <div class="text-h6 px-12 pb-10">
     I am a recent graduate from the Occupational Therapy Program at Stony Brook University. My passion for OT began when I accompanied my cousin to her OT appointment at a sensory clinic. I am intrigued by the client-centered holistic approach that OT has to offer. I am a dedicated individual and passionate about providing OT services that lead to positive outcomes and improve overall well-being.
   </div>
 </template>

@@ -4,7 +4,7 @@
 <template>
   <div id="experience" class="text-center text-h4">Experience</div>
   <v-timeline align="start" side="end" class="px-2">
-    <v-timeline-item>
+    <v-timeline-item dot-color="#1870b8">
       <template v-slot:opposite>
         September 2024 - December 2024 <br> <br>
         Level 2 Fieldwork <br>
@@ -47,7 +47,7 @@
       </div>
     </v-timeline-item>
 
-    <v-timeline-item>
+    <v-timeline-item dot-color="#1870b8">
       <template v-slot:opposite>
         March 2024 - June 2024 <br> <br>
         Level 2 Fieldwork <br>
@@ -83,7 +83,7 @@
       </div>
     </v-timeline-item>
 
-    <v-timeline-item>
+    <v-timeline-item dot-color="#1870b8">
       <template v-slot:opposite>
         July 2024 - Present <br> <br>
         Personal Caregiver Assistant
@@ -110,7 +110,7 @@
       </div>
     </v-timeline-item>
 
-    <v-timeline-item>
+    <v-timeline-item dot-color="#1870b8">
       <template v-slot:opposite>
         August 2020 - Present <br> <br>
         Daycare Assistant

@@ -55,11 +55,12 @@ const items = [
         />
       </template>
 
-      <v-img
-          class="me-sm-8"
-          max-width="40"
+      <img
           src="/ot_logo.png"
-      />
+          alt="Logo"
+          class="me-sm-8"
+          style="max-width: 40px"
+       />
 
       <template v-if="$vuetify.display.mdAndUp">
         <v-btn
@@ -180,10 +181,10 @@ const items = [
 
       <div class="pa-4">
         <v-sheet
-            color="surface-light"
+
             rounded="lg"
             width="100%"
-            style="height: calc(100vh - 180px); overflow-y: auto"
+            style="height: calc(100vh - 180px); overflow-y: auto; background: linear-gradient(to bottom, #BBDEFB, #E3F2FD)"
         >
           <slot></slot>
         </v-sheet>
