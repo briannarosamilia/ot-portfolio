@@ -32,7 +32,7 @@ const responsive = computed(() => {
                 </div>
               </v-col>
               <v-col>
-                <div class="pt-6 pb-2 px-12">
+                <div class="pt-6 pb-2 px-12 h-100" style="position: relative">
                   <v-row no-gutters>
                     <!--NAME-->
                     <v-col cols="12" class="text-h4">
@@ -65,8 +65,13 @@ const responsive = computed(() => {
                     <v-col cols="12" class="text-body-2 text-md-body-1">
                       Fort Solanga, New York
                     </v-col>
-
                   </v-row>
+                  <img
+                      src="/qr-code.svg"
+                      alt="QR code"
+                      class="ma-2"
+                      style="max-width: 120px; position: absolute; bottom: 0; right: 0"
+                  />
                 </div>
               </v-col>
             </v-row>
