@@ -2,78 +2,41 @@
 </script>
 
 <template>
-  <div id="education" class="text-center text-h4">Education</div>
-  <v-timeline align="start" side="end">
-    <v-timeline-item dot-color="#1870b8">
-      <template v-slot:opposite>
-        September 2024 - December 2024 <br> <br>
-        Level 2 Fieldwork <br>
-        Occupational Therapy Student
-      </template>
-      <div>
-        <div class="text-h6">
-          Theralympics Speech Therapy <br>
-          Ronkonkoma, NY
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-        </p>
-      </div>
-    </v-timeline-item>
+  <div class="pa-8">
+    <div id="education" class="text-center text-h4">Education</div>
 
-    <v-timeline-item dot-color="#1870b8">
-      <template v-slot:opposite>
-        March 2024 - June 2024 <br> <br>
-        Level 2 Fieldwork <br>
-        Occupational Therapy Student
-      </template>
-      <div>
-        <div class="text-h6">
-          Quantum Rehabilitation and Nursing Center <br>
-          Middle Island, NY
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-        </p>
-      </div>
-    </v-timeline-item>
+    <br>
 
-    <v-timeline-item dot-color="#1870b8">
-      <template v-slot:opposite>
-        July 2024 - Present <br> <br>
-        Personal Caregiver Assistant
-      </template>
-      <div>
-        <div class="text-h6">
-          Edison Home Healthcare <br>
-          Islandia, NY
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-        </p>
-      </div>
-    </v-timeline-item>
+    <div class="text-h6 text-center">
+      Master of Science in Occupational Therapy at Stony Brook School of Health Professions<br>
+      2022-2025
+    </div>
 
-    <v-timeline-item dot-color="#1870b8">
-      <template v-slot:opposite>
-        August 2020 - Present <br> <br>
-        Daycare Assistant
-      </template>
-      <div>
-        <div class="text-h6">
-          Stellar Tots inc. <br>
-          Fort Solanga, NY
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-        </p>
-      </div>
-    </v-timeline-item>
-  </v-timeline>
+    <br>
+
+    <div class="text-body-1">
+      This program has equipped me with the clinical skills and knowledge necessary to support clients in reaching their
+      full potential through a holistic, evidence-based approach. I served as the Historian for the Student Occupational
+      Therapy Association (SOTA), where I was responsible for maintaining and updating the school bulletin boards.
+      Additionally, I collaborated with the community service committee to assist in planning and coordinating volunteer
+      events that promoted community engagement.
+    </div>
+
+    <br>
+
+    <div class="text-h6 text-center">
+      Bachelor of Science in Psychology at Farmingdale State College<br>
+      2017-2021
+    </div>
+
+    <br>
+
+    <div class="text-body-1">
+      My degree in psychology has provided a strong foundation for entering the field of occupational therapy, where
+      mental health plays a vital role in patient care. As OTs, we treat the whole person, addressing not only physical
+      needs but also emotional and social factors that influence overall well-being.
+    </div>
+  </div>
 </template>
 
 <style scoped>

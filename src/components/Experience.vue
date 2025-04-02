@@ -86,7 +86,7 @@
     <v-timeline-item dot-color="#1870b8">
       <template v-slot:opposite>
         July 2024 - Present <br> <br>
-        Personal Caregiver Assistant
+        Caregiver
       </template>
       <div>
         <div class="text-h6">
@@ -121,10 +121,22 @@
           Stellar Tots inc. <br>
           Fort Solanga, NY
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-        </p>
+        <div class="px-6 pt-2">
+          <ul>
+            <li class="mb-2">
+              Facilitate a safe and nurturing environment for children ages 3 months to 4 years old
+            </li>
+            <li class="mb-2">
+              Create age-appropriate learning activities that aid in growth and development
+            </li>
+            <li class="mb-2">
+              Assist in properly taking care of the children (feeding, toileting, and napping)
+            </li>
+            <li class="mb-2">
+              Train new employees to ensure smooth running of the organization
+            </li>
+          </ul>
+        </div>
       </div>
     </v-timeline-item>
   </v-timeline>

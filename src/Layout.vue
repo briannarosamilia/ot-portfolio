@@ -26,7 +26,7 @@ const items = [
   },
   {
     text: 'Volunteer Experience',
-    section: 'education',
+    section: 'volunteer',
   },
   {
     text: 'Portfolio',
@@ -87,11 +87,11 @@ const items = [
             </v-btn>
           </template>
           <v-list>
-            <v-list-item>
+            <v-list-item @click="scrollTo('memberships')">
               <v-list-item-title>Memberships</v-list-item-title>
             </v-list-item>
-            <v-list-item>
-              <v-list-item-title>Hobbies</v-list-item-title>
+            <v-list-item @click="scrollTo('certifications')">
+              <v-list-item-title>Certifications</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>
@@ -112,68 +112,12 @@ const items = [
 
         <v-list-item link title="Education" @click="scrollTo('education')" />
 
-<!--        <v-list-group-->
-<!--            prepend-icon="mdi-account-multiple-outline"-->
-<!--            title="Customers"-->
-<!--        >-->
-<!--          <template #activator="{ props: activatorProps }">-->
-<!--            <v-list-item v-bind="activatorProps" />-->
-<!--          </template>-->
+        <v-list-item link title="Volunteer Experience" @click="scrollTo('volunteer')" />
 
-<!--          <v-list-item-->
-<!--              link-->
-<!--              prepend-icon="mdi-account-plus-outline"-->
-<!--              title="Create New"-->
-<!--          />-->
+        <v-list-item link title="Memberships" @click="scrollTo('memberships')" />
 
-<!--          <v-list-group prepend-icon="mdi-magnify" title="Search">-->
-<!--            <template #activator="{ props: activatorProps }">-->
-<!--              <v-list-item v-bind="activatorProps" />-->
-<!--            </template>-->
+        <v-list-item link title="Certifications" @click="scrollTo('certifications')" />
 
-<!--            <v-list-item-->
-<!--                link-->
-<!--                prepend-icon="mdi-account-outline"-->
-<!--                title="By Name"-->
-<!--            />-->
-
-<!--            <v-list-item-->
-<!--                link-->
-<!--                prepend-icon="mdi-email-outline"-->
-<!--                title="By Email"-->
-<!--            />-->
-
-<!--            <v-list-item-->
-<!--                link-->
-<!--                prepend-icon="mdi-phone-outline"-->
-<!--                title="By Phone"-->
-<!--            />-->
-<!--          </v-list-group>-->
-<!--        </v-list-group>-->
-
-<!--        <v-list-item link prepend-icon="mdi-calendar" title="Calendar" />-->
-
-<!--        <v-list-item link prepend-icon="mdi-poll" title="Analytics" />-->
-
-<!--        <v-divider />-->
-
-<!--        <v-list-item link prepend-icon="mdi-inbox-outline" title="Inbox" />-->
-
-<!--        <v-list-item-->
-<!--            link-->
-<!--            prepend-icon="mdi-bell-outline"-->
-<!--            title="Notifications"-->
-<!--        />-->
-
-<!--        <v-divider />-->
-
-<!--        <v-list-item-->
-<!--            lines="two"-->
-<!--            link-->
-<!--            prepend-avatar="https://vuetifyjs.b-cdn.net/docs/images/avatars/planetary-subscriber.png"-->
-<!--            subtitle="Vuetify Engineer"-->
-<!--            title="John Leider"-->
-<!--        />-->
       </v-list>
     </v-navigation-drawer>
 

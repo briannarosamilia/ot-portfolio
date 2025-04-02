@@ -27,12 +27,12 @@ const responsive = computed(() => {
           <v-card class="rounded-lg my-4">
             <v-row no-gutters>
               <v-col>
-                <div class="d-flex justify-center">
-                  <img src="/headshot.jpg" alt="Headshot" class="rounded-lg ma-2" style="max-width: 240px"/>
+                <div>
+                  <img src="/headshot.jpg" alt="Headshot" class="rounded-lg ma-2" style="max-width: 300px"/>
                 </div>
               </v-col>
               <v-col>
-                <div class="pt-6 pb-2 px-12 h-100" style="position: relative">
+                <div class="pt-6 pb-2 px-4 h-100">
                   <v-row no-gutters>
                     <!--NAME-->
                     <v-col cols="12" class="text-h4">
@@ -66,12 +66,6 @@ const responsive = computed(() => {
                       Fort Solanga, New York
                     </v-col>
                   </v-row>
-                  <img
-                      src="/qr-code.svg"
-                      alt="QR code"
-                      class="ma-2"
-                      style="max-width: 120px; position: absolute; bottom: 0; right: 0"
-                  />
                 </div>
               </v-col>
             </v-row>
