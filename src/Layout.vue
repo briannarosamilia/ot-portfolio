@@ -28,18 +28,18 @@ const items = [
     text: 'Volunteer Experience',
     section: 'volunteer',
   },
-  {
-    text: 'Portfolio',
-    section: 'education',
-  },
-  {
-    text: 'Capstone',
-    section: 'education',
-  },
-  {
-    text: 'Skills',
-    section: 'education',
-  },
+  // {
+  //   text: 'Portfolio',
+  //   section: 'education',
+  // },
+  // {
+  //   text: 'Capstone',
+  //   section: 'education',
+  // },
+  // {
+  //   text: 'Skills',
+  //   section: 'education',
+  // },
 ]
 
 
@@ -105,7 +105,7 @@ const items = [
         v-model="drawer"
         location="top"
         temporary
-        width="105"
+        width="250"
     >
       <v-list class="py-0" slim>
         <v-list-item link title="Experience" @click="scrollTo('experience')" />
