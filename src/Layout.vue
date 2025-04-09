@@ -7,7 +7,7 @@ defineProps();
 const emit = defineEmits();
 
 const scrollTo = (section) => {
-  console.log(section);
+  // console.log(section);
   // Emit event with the section name
   emit('scroll-to', section);
 };
@@ -32,14 +32,14 @@ const items = [
   //   text: 'Portfolio',
   //   section: 'education',
   // },
-  // {
-  //   text: 'Capstone',
-  //   section: 'education',
-  // },
-  // {
-  //   text: 'Skills',
-  //   section: 'education',
-  // },
+  {
+    text: 'Capstone',
+    section: 'capstone',
+  },
+  {
+    text: 'Skills',
+    section: 'skills',
+  },
 ]
 
 
@@ -105,7 +105,7 @@ const items = [
         v-model="drawer"
         location="top"
         temporary
-        width="250"
+        width="340"
     >
       <v-list class="py-0" slim>
         <v-list-item link title="Experience" @click="scrollTo('experience')" />
@@ -113,6 +113,10 @@ const items = [
         <v-list-item link title="Education" @click="scrollTo('education')" />
 
         <v-list-item link title="Volunteer Experience" @click="scrollTo('volunteer')" />
+
+        <v-list-item link title="Capstone" @click="scrollTo('capstone')" />
+
+        <v-list-item link title="Skills" @click="scrollTo('skills')" />
 
         <v-list-item link title="Memberships" @click="scrollTo('memberships')" />
 

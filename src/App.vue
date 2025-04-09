@@ -8,21 +8,25 @@ import Volunteer from "./components/Volunteer.vue";
 import Memberships from "./components/Memberships.vue";
 import Certifications from "./components/Certifications.vue";
 import {useDisplay} from "vuetify";
+import Capstone from "./components/Capstone.vue";
+import Skills from "./components/Skills.vue";
 
 const {width} = useDisplay();
 
 const experienceRef = ref(null);
 const educationRef = ref(null);
 const volunteerRef = ref(null);
+const capstoneRef = ref(null);
 const membershipsRef = ref(null);
 const certificationsRef = ref(null);
+const skillsRef = ref(null);
 
 const scrollToSection = (section) => {
   const targetElement = document.getElementById(section);
 
   // If the element exists, scroll to it
   if (targetElement) {
-    targetElement.scrollIntoView({ behavior: 'smooth' });
+    targetElement.scrollIntoView({behavior: 'smooth'});
   }
 };
 </script>
@@ -32,22 +36,33 @@ const scrollToSection = (section) => {
     <div id="page-container">
       <ContactInfo/>
 
-      <Experience ref="experienceRef" />
+      <Experience ref="experienceRef"/>
 
-      <Education ref="educationRef" />
+      <Education ref="educationRef"/>
 
-      <Volunteer ref="volunteerRef" />
+      <Volunteer ref="volunteerRef"/>
+
+      <Capstone ref="capstoneRef"/>
 
       <v-row no-gutters>
-        <v-col cols="12" sm="6" class="py-4">
-          <Memberships ref="membershipsRef" />
+        <v-col cols="12" class="py-4">
+          <div class="d-flex-justify-center">
+            <Skills ref="skillsRef"/>
+          </div>
         </v-col>
         <v-col cols="12" sm="6" class="py-4">
-          <Certifications ref="certificationsRef" />
+          <div class="d-flex-justify-center">
+            <Memberships ref="membershipsRef"/>
+          </div>
+        </v-col>
+        <v-col cols="12" sm="6" class="py-4">
+          <div class="d-flex-justify-center">
+            <Certifications ref="certificationsRef"/>
+          </div>
         </v-col>
       </v-row>
 
-      <div style="position:relative; min-height:120px">
+      <div style="position:relative; min-height:136px">
         <img
             src="/qr-code.svg"
             alt="QR code"

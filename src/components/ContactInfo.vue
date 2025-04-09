@@ -6,9 +6,9 @@ const {width} = useDisplay();
 
 const responsive = computed(() => {
   if (width.value < 672) {
-    return {height: 'height: 700px', cols: 10, offset: 1}
+    return {height: 'height: 760px', cols: 10, offset: 1}
   } else if (width.value < 832) {
-    return {height: 'height: 660px', cols: 8, offset: 2};
+    return {height: 'height: 740px', cols: 8, offset: 2};
   } else {
     return {height: 'height: 460px', cols: 8, offset: 2};
   }
@@ -64,6 +64,19 @@ const responsive = computed(() => {
                     </v-col>
                     <v-col cols="12" class="text-body-2 text-md-body-1">
                       Fort Solanga, New York
+                    </v-col>
+                    <v-col cols="12" >
+                      <div class="d-flex align-center rounded-lg mt-2 pa-2" style="max-width: fit-content; border: 2px solid #007ebb">
+                        <a href="https://www.linkedin.com/in/brianna-rosamilia-5436032a7/">
+                          Connect with me on Linkedin
+                        </a>
+                        <img
+                            src="/linkedin_logo.svg"
+                            alt="linkedin logo"
+                            class="ml-2"
+                            style="max-width: 36px"
+                        />
+                      </div>
                     </v-col>
                   </v-row>
                 </div>
