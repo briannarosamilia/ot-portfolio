@@ -7,11 +7,11 @@
     <v-card id="memberships" color="blue-darken-3" style="max-width: fit-content">
       <v-card-title>Memberships</v-card-title>
       <v-card-text class="text-body-1">
-        <div class="my-2">Student Occupational Therapy Association (SOTA)</div>
+        <div class="my-2">New York State Occupational Therapy Association (NYSOTA)</div>
 
         <div class="my-2">American Occupational Therapy Association (AOTA)</div>
 
-        <div class="my-2">New York State Occupational Therapy Association (NYSOTA)</div>
+        <div class="my-2">Student Occupational Therapy Association (SOTA)</div>
       </v-card-text>
     </v-card>
   </div>
